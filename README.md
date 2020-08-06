@@ -12,5 +12,5 @@ Deployed:
 Repo:
 
 
-![](Assets/Scheduler.png)
+![](Assets/Scheduler.PNG)
 
