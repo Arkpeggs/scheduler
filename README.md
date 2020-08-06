@@ -7,9 +7,9 @@ SO THAT I can manage my time effectively
 ```
 This is day planner with save buttons, a clear button and the input field backgorund will be different depending on the time of day. In the future, I intend to update the aesthetics and use a more efficient method of changing the timeblock background.
 
-Deployed:
+Deployed: https://arkpeggs.github.io/scheduler/Develop/
 
-Repo:
+Repo: https://github.com/Arkpeggs/scheduler/
 
 
 ![](Assets/Scheduler.PNG)
