@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <P><button class="btn btn-rounded btn-primary btn-lg" id= "clear">Clear schedule</button></P>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-md-2"><span class= "time-of-day">9am</span></div>
+        <div class="col-md-8 time-block" id= "nine">          
+          <textarea id= "box1"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">10am</span></div>
+        <div class="col-md-8 time-block" id= "ten">          
+          <textarea id= "box2"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">11am</span></div>
+        <div class="col-md-8 time-block" id= "eleven">          
+          <textarea id= "box3"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">12pm</span></div>
+        <div class="col-md-8 time-block" id= "twelve">          
+          <textarea id= "box4"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day" >1pm</span></div>
+        <div class="col-md-8 time-block" id= "one">          
+          <textarea id= "box5"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">2pm</span></div>
+        <div class="col-md-8 time-block" id= "two">          
+          <textarea id= "box6"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">3pm</span></div>
+        <div class="col-md-8 time-block" id= "three">          
+          <textarea id= "box7"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">4pm</span></div>
+        <div class="col-md-8 time-block" id= "four">          
+          <textarea id= "box8"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+        <div class="col-md-2"><span class= "time-of-day">5pm</span></div>
+        <div class="col-md-8 time-block" id= "five">          
+          <textarea id= "box9"></textarea>
+        </div>
+        <div class="col-md-2"><button class="btn btn-rounded btn-primary btn-lg saveBtn">Save<i class="fas fa-save pl-1"></i></button></div>
+    </div>   
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"> 
+    </script>
+    <script>
+
+  // displays time    
+    function displayTime() {
+    var dateAndTime = moment().format('dddd') + " " + moment().format("MMM Do YY") + ", " + moment().format('HH:mm:ss');
+    $('#currentDay').html(dateAndTime);
+    setTimeout(displayTime, 1000);
+  }
+
+  $(document).ready(function() {
+     displayTime();
+ 
+});
+
+
+
+
+
+    </script>
+<script src="./script.js"></script>  
+
+</body>
+</html>
