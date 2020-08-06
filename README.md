@@ -12,5 +12,5 @@ Deployed:
 Repo:
 
 
-![day planner demo](Assets/Scheduler)
+![](Assets/Scheduler.png)
 
