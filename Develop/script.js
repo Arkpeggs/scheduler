@@ -58,49 +58,49 @@ console.log(time)
     if (time == 12){
         document.getElementById("twelve").style.backgroundColor= "#f3ff4d" ;
     }            
-    if (time > 1) {
+    if (time > 13) {
         document.getElementById("one").style.backgroundColor= "#77dd77";
     } 
-    if (time < 1) {
+    if (time < 13) {
         document.getElementById("one").style.backgroundColor= "#ff6961";
     } 
-    if (time == 1){
+    if (time == 13){
         document.getElementById("one").style.backgroundColor= "#f3ff4d" ;
     }       
-    if (time > 2) {
+    if (time > 14) {
         document.getElementById("two").style.backgroundColor= "#77dd77";
     } 
-    if (time < 2) {
+    if (time < 14) {
         document.getElementById("two").style.backgroundColor= "#ff6961";
     } 
-    if (time == 2){
+    if (time == 14){
         document.getElementById("two").style.backgroundColor= "#f3ff4d" ;
     }                
-    if (time > 3) {
+    if (time > 15) {
         document.getElementById("three").style.backgroundColor= "#77dd77";
     } 
-    if (time < 3) {
+    if (time < 15) {
         document.getElementById("three").style.backgroundColor= "#ff6961";
     } 
-    if (time == 3){
+    if (time == 15){
         document.getElementById("three").style.backgroundColor= "#f3ff4d" ;
     }   
-    if (time > 4) {
+    if (time > 16) {
         document.getElementById("four").style.backgroundColor= "#77dd77";
     } 
-    if (time < 4) {
+    if (time < 16) {
         document.getElementById("four").style.backgroundColor= "#ff6961";
     } 
-    if (time == 4){
+    if (time == 16){
     document.getElementById("four").style.backgroundColor= "#f3ff4d" ;
     } 
-    if (time > 5) {
+    if (time > 17) {
     document.getElementById("five").style.backgroundColor= "#77dd77";
     } 
-    if (time < 5) {
+    if (time < 17) {
     document.getElementById("five").style.backgroundColor= "#ff6961";
     } 
-    if (time == 5){
+    if (time == 17){
     document.getElementById("five").style.backgroundColor= "#f3ff4d" ;
     }     
 //save function for buttons
